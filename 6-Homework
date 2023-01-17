@@ -1,4 +1,4 @@
-// Task 1
+// Task1
 
 let Hamburger = 3;
 let Fries = 1;
@@ -9,14 +9,14 @@ if(Hamburger >= 3 && Fries >= 1){
     console.log('Ми йдемо в інше кафе')
 }
 
-// Task 2
+// Task2
 
 let prise = 1800;
 if (prise >=100 && prise <= 1900){ 
     console.log('вираз істинний')
 }
 
-// Task 3
+// Task3
 
 let prise1 = true ;
 
@@ -27,7 +27,7 @@ if(prise1 >= 1900 && prise1 <= 1000 ){
 //console.log(prise1) 
 console.log(!prise1);
 
-// Task 4
+// Task4
 
 let Season = 4;
 
@@ -41,7 +41,7 @@ if(Season = 1){
     console.log('Autumn');
 }
 
-// Task 5
+// Task5
 
 let a = 3, b = 2, c = 1
 let avg
@@ -71,7 +71,7 @@ if (a > b) {
   
   console.log("avg(" + a + ", " + b + ", " + c + ") = " + avg)
 
-// Task 6
+// Task6
 
 let number = '3';
 
@@ -99,7 +99,7 @@ switch(number){
         break;
 }
 
-// Task 7
+// Task7
 
 
 let symbol = "/";
@@ -119,13 +119,13 @@ switch (symbol){
         break; 
 }
 
-// Task 8
+// Task8
 
 let str = 'Myroslava';
 const res = str.split('').filter(letter => !['y','o','a'].includes(letter.toLowerCase())).join('');
 console.log(res);
 
-// Task 9
+// Task9
 
 let distanceinM = 15
 let distanceinKm = distanceinM / 1000
