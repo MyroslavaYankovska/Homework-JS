@@ -127,7 +127,7 @@ console.log(res);
 
 // Task9
 
-let distanceinM = 15
+let distanceinM = 1000
 let distanceinKm = distanceinM / 1000
 let mod = distanceinKm % 10
 
