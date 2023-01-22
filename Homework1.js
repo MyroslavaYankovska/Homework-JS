@@ -9,6 +9,7 @@ if(Hamburger >= 3 && Fries >= 1){
     console.log('Ми йдемо в інше кафе')
 }
 
+
 // Task2
 
 let prise = 1800;
@@ -29,17 +30,20 @@ console.log(!prise1);
 
 // Task4
 
-let Season = 4;
+let season = 2
 
-if(Season = 1){
-    console.log('Winter');
-} else if (Season = 2){
-    console.log('Spring');
-} else if (Season = 3){
-    console.log('Summer');
-} else if (Season = 4){
-    console.log('Autumn');
-}
+if (season == 1)
+  console.log("Winter")
+else
+if (season == 2)
+  console.log("Spring")
+else
+if (season == 3)
+  console.log("Summer")
+else
+if (season == 4)
+  console.log("Autumn")
+
 
 // Task5
 
@@ -122,7 +126,7 @@ switch (symbol){
 // Task8
 
 let str = 'Myroslava';
-const res = str.split('').filter(letter => !['y','o','a'].includes(letter.toLowerCase())).join('');
+let res = str.split('').filter(letter => !['y','o','a'].includes(letter.toLowerCase())).join('');
 console.log(res);
 
 // Task9
