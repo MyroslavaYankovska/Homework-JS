@@ -1,23 +1,23 @@
 // Task1
 
 function checkAvailability(Hamburger, Fries) {
-    if (Hamburger >= 3 && Fries >= 1) {
+    if (Hamburger >= 4 && Fries >= 1) {
       return ('ми поїли');
-    } else if (Hamburger < 3 && Fries < 1){
+    } else if (Hamburger < 4 && Fries < 1){
       return ('Ми йдемо в інше кафе');
     }
   }
 
-  console.log(checkAvailability(3,1));
+  console.log(checkAvailability(4,1));
 
 // Task2
 
 function checkPrise(prise) {
-    if (prise >=100 && prise <= 1900) {
+    if (prise >=1000 && prise <= 1900) {
       return ('вираз істинний');
   }
 }
-console.log(checkPrise(1800));
+console.log(checkPrise(1900));
 
 
 // Task3 

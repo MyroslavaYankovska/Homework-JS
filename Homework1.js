@@ -1,36 +1,31 @@
 // Task1
 
-let Hamburger = 3;
+let Hamburger = 4;
 let Fries = 1;
 
-if(Hamburger >= 3 && Fries >= 1){
+if(Hamburger >= 4 && Fries >= 1){
     console.log('ми поїли')
-} else if (Hamburger < 3 && Fries < 1){
+} else if (Hamburger < 4 && Fries < 1){
     console.log('Ми йдемо в інше кафе')
 }
 
 
 // Task2
 
-let prise = 1800;
-if (prise >=100 && prise <= 1900){ 
+let prise = 1900;
+if (prise >=1000 && prise <= 1900){ 
     console.log('вираз істинний')
 }
 
 // Task3
 
-let prise1 = true ;
+if (!(price1 >= 1000 && price1 <= 1900))
 
-if(prise1 >= 1900 && prise1 <= 1000 ){
-    console.log('вираз істинний')
-} 
-
-//console.log(prise1) 
-console.log(!prise1);
+if (price1 < 1000 || price1 > 1900)
 
 // Task4
 
-let season = 2
+let season = 4;
 
 if (season == 1)
   console.log("Winter")
@@ -105,21 +100,22 @@ switch(number){
 
 // Task7
 
-
+let d = 3;
+let e = 1;
 let symbol = "/";
 
 switch (symbol){
     case '+':
-        console.log(3 + 1)
+        console.log(d + e)
         break;
     case '-': 
-        console.log(3 - 2)
+        console.log(d - e)
         break;
     case '*':
-        console.log(3 * 2)
+        console.log(d * e)
         break;
    case '/':
-        console.log(4 / 2)
+        console.log(d / e)
         break; 
 }
 
