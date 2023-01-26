@@ -1,47 +1,46 @@
-// Task 1
+// Task1
 
-let Hamburger = 3;
+let Hamburger = 4;
 let Fries = 1;
 
-if(Hamburger >= 3 && Fries >= 1){
+if(Hamburger >= 4 && Fries >= 1){
     console.log('ми поїли')
-} else if (Hamburger < 3 && Fries < 1){
+} else if (Hamburger < 4 && Fries < 1){
     console.log('Ми йдемо в інше кафе')
 }
 
-// Task 2
 
-let prise = 1800;
-if (prise >=100 && prise <= 1900){ 
+// Task2
+
+let prise = 1900;
+if (prise >=1000 && prise <= 1900){ 
     console.log('вираз істинний')
 }
 
-// Task 3
+// Task3
 
-let prise1 = true ;
+if (!(price1 >= 1000 && price1 <= 1900))
 
-if(prise1 >= 1900 && prise1 <= 1000 ){
-    console.log('вираз істинний')
-} 
+if (price1 < 1000 || price1 > 1900)
 
-//console.log(prise1) 
-console.log(!prise1);
+// Task4
 
-// Task 4
+let season = 4;
 
-let Season = 4;
+if (season == 1)
+  console.log("Winter")
+else
+if (season == 2)
+  console.log("Spring")
+else
+if (season == 3)
+  console.log("Summer")
+else
+if (season == 4)
+  console.log("Autumn")
 
-if(Season = 1){
-    console.log('Winter');
-} else if (Season = 2){
-    console.log('Spring');
-} else if (Season = 3){
-    console.log('Summer');
-} else if (Season = 4){
-    console.log('Autumn');
-}
 
-// Task 5
+// Task5
 
 let a = 3, b = 2, c = 1
 let avg
@@ -71,7 +70,7 @@ if (a > b) {
   
   console.log("avg(" + a + ", " + b + ", " + c + ") = " + avg)
 
-// Task 6
+// Task6
 
 let number = '3';
 
@@ -99,33 +98,34 @@ switch(number){
         break;
 }
 
-// Task 7
+// Task7
 
-
+let d = 3;
+let e = 1;
 let symbol = "/";
 
 switch (symbol){
     case '+':
-        console.log(3 + 1)
+        console.log(d + e)
         break;
     case '-': 
-        console.log(3 - 2)
+        console.log(d - e)
         break;
     case '*':
-        console.log(3 * 2)
+        console.log(d * e)
         break;
    case '/':
-        console.log(4 / 2)
+        console.log(d / e)
         break; 
 }
 
-// Task 8
+// Task8
 
 let str = 'Myroslava';
-const res = str.split('').filter(letter => !['y','o','a'].includes(letter.toLowerCase())).join('');
+let res = str.split('').filter(letter => !['y','o','a'].includes(letter.toLowerCase())).join('');
 console.log(res);
 
-// Task 9
+// Task9
 
 let distanceinM = 15
 let distanceinKm = distanceinM / 1000
@@ -133,11 +133,16 @@ let mod = distanceinKm % 10
 
 let ending = ""
 if (mod == 1) {
-    ending =""
+    ending = ""
 } else if ([2,3,4].includes(mod)) {
-    ending = ('и');
+    ending = 'и';
 } else if ([5,6,7,8,9,0].includes(mod)) {
-    ending =('ів');
-} 
+    ending = 'ів';
+} else if(!Number.isInteger(mod)) {
+    ending = 'и';
 
-let answer = distanceInKm + "кілометр" + ending
+}
+
+let answer = distanceinKm + " кілометр" + ending
+
+console.log(answer)
